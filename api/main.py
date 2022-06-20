@@ -2,10 +2,7 @@ from fastapi import FastAPI
 from api.routers import users,companys
 from api.db.database import engine
 from api.models import data_models
-import tkinter
 
-top = tkinter.TK()
-top.mainloop()
 
 data_models.Base.metadata.create_all(bind=engine)
 
