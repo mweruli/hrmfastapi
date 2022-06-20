@@ -1,6 +1,4 @@
 from datetime import datetime
-import imp
-from fastapi import FastAPI
 from pydantic import BaseModel, EmailStr
 from datetime import datetime
 
