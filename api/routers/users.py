@@ -5,7 +5,7 @@ from api.db.database import get_db
 from api.operations.user_operation import create_user
 
 router = APIRouter(
-    tags=["Users Registration"],
+    tags=["User Registration"],
     prefix="/user"
 )
 
