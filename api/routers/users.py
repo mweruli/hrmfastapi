@@ -5,6 +5,7 @@ from api.schemas.user_schema import UserCreate, ShowUser
 from api.db.database import get_db
 from api.operations.user_operation import create_user, get_user_by_email,get_user,get_user_by_name
 
+
 router = APIRouter(
     tags=["Users Registration"],
     prefix="/user"

@@ -19,7 +19,7 @@ def get_user_by_name(db: Session, username: str):
 
 def get_users(db: Session, skip: int = 0, limit: int = 100):
     return db.query(User).offset(skip).limit(limit).all()
-
+    
 
 def create_user(db: Session, user: UserCreate):
     db_user = User(email=user.email, username=user.username, password=Hash.bcrypt(user.password), apikey = secrets.token_hex(30))
