@@ -13,6 +13,7 @@ class UserCreate(BaseModel):
     updated_at: datetime
 
 class ShowUser(BaseModel):
+    id: int
     username: str
     email: EmailStr
     is_active: bool
